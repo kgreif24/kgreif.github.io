@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Greif</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-pattern"></div>
+    
+    <header class="site-header">
+        <h1 class="name">Kevin Greif</h1>
+        <nav class="header-links">
+            <a href="www.linkedin.com/in/kevin-greif-824b091b4" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="kevin_greif_cv.pdf" target="_blank">CV</a>
+            <a href="kevin_greif_resume.pdf" target="_blank">Resume</a>
+            <a href="https://github.com/kgreif24" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <nav class="tab-navigation">
+            <button class="tab-button active" data-tab="bio">Bio</button>
+            <button class="tab-button" data-tab="publications">Publications</button>
+            <button class="tab-button" data-tab="etc">Etc</button>
+        </nav>
+
+        <div class="content-card">
+            <!-- Bio Page -->
+            <section id="bio" class="tab-content active">
+                <div class="bio-layout">
+                    <div class="photo-container">
+                        <img src="kgreif_photo.jpeg" alt="Kevin Greif" class="profile-photo">
+                    </div>
+                    <div class="bio-text">
+                        <p class="bio-paragraph">
+                            I'm a PhD student in the Department of Physics and Astronomy at the University of California, Irvine. My research is in applications of AI to particle physics, in particular to the ATLAS experiment at the Large Hadron Collider. I'm interested in AI for natural science, scientific foundation models, and any tough problem that can be solved with lots of data.
+
+                            I am best reached via email at <a href="mailto:kgreif@uci.edu">kgreif@uci.edu</a>.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="research-interests">
+                    <h2>Research Interests</h2>
+                    <ul>
+                        <li>De-correlation (aka "unfolding") in particle physics experiments: This is a problem that arises when trying to extract physical quantities from data that has been affected by detector effects. I use AI methods to statistically correct for detector effects and extract the physical quantities of interest.</li>
+                        <li>Scientific foundation models: I'm interested in building large scale AI models specifically for the types of data found in fundamental physics experiments, in the hope that they can unlock entirely new classes of measurements and insights.</li>
+                        <li>Jets and QCD in collider physics experiments: The strong nuclear force is responsible for creating jets of particles in proton-proton collisions at the LHC. I'm interested in using AI and other statistical methods to study these objects in their native high-dimensionality.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Publications Page -->
+            <section id="publications" class="tab-content">
+                <h2>Publications</h2>
+                
+                <p class="pub-note">
+                    For a complete list of my publications, see my 
+                    <a href="https://inspirehep.net/authors/2751406" target="_blank" rel="noopener">INSPIRE-HEP profile</a>.
+                </p>
+                
+                <article class="publication">
+                    <h3 class="pub-title">Generative unfolding of jets and their substructure</h3>
+                    <p class="pub-authors">Antoine Petitjean, Anja Butter, <strong>Kevin Greif</strong>, Sofia Palacios Schweitzer, Tilman Plehn, Jonas Spinner, and Danield Whiteson</p>
+                    <p class="pub-venue">Preprint, 2025</p>
+                    <p class="pub-description">
+                        Advised on the development of a generative model based method for de-convolution high dimensional feature spaces, in particular for the study of jet substructure at the LHC.
+                    </p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/pdf/2510.19906" target="_blank">Paper</a>
+                    </div>
+                </article>
+
+                <article class="publication">
+                    <h3 class="pub-title">The landscape of unfolding with machine learning</h3>
+                    <p class="pub-authors">Nathan Huetsch, Javier Villadamingo, Alexander Shmakov, Sascha Diefenbacher, Vinicius Mikuni, Theo Heimel, Michael Fentonm, <strong>Kevin Greif</strong>, Benjamin Nachman, Daniel Whiteson, Anja Butter, and Tilman Plehn</p>
+                    <p class="pub-venue">SciPost Phys. 18 (2025) 070</p>
+                    <p class="pub-description">
+                        Contributed to a community comparison study of several machine learning based de-convolution methods.
+                    </p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/pdf/2404.18807" target="_blank">Paper</a>
+                    </div>
+                </article>
+
+                <article class="publication">
+                    <h3 class="pub-title">Full event particle-level unfolding with variable-length latent variational diffusion</h3>
+                    <p class="pub-authors">Alexander Shmakov, <strong>Kevin Greif</strong>, Michael Fenton, Aishik Ghosh, Pierre Baldi, and Daniel Whiteson</p>
+                    <p class="pub-venue">SciPost Phys. 18 (2025) 117</p>
+                    <p class="pub-description">
+                        Developed a generative model based de-convolution method capable of processing variable-length feature spaces. Based upon a latent variational diffusion model.
+                    </p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/pdf/2404.14332" target="_blank">Paper</a>
+                        <a href="https://github.com/Alexanders101/LVD/tree/main" target="_blank">Code</a>
+                    </div>
+                </article>
+
+                <article class="publication">
+                    <h3 class="pub-title">End-to-end variational diffusion models for inverse problems in high energy physics</h3>
+                    <p class="pub-authors">Alexander Shmakov, <strong>Kevin Greif</strong>, Michael Fenton, Aishik Ghosh, Pierre Baldi, and Daniel Whiteson</p>
+                    <p class="pub-venue">NeurIPS 2024</p>
+                    <p class="pub-description">
+                        Developed a new method for de-convolution that combines latent diffusion models with an end-to-end variational framework for model training. This was the first generative de-convolution method to show strong performance in problems with many tens of dimensions.
+                    </p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/pdf/2305.10399" target="_blank">Paper</a>
+                    </div>
+                </article>
+
+                <article class="publication">
+                    <h3 class="pub-title">Accuracy versus precision in bootsted top tagging with the ATLAS detector</h3>
+                    <p class="pub-authors">The ATLAS Collaboration</p>
+                    <p class="pub-venue">JINST 19 (2024) 08</p>
+                    <p class="pub-description">
+                        Benchmarked the performance of several machine learning based top tagging algorithms, including full treatment of systematic uncertainties. Additionally published a high quality benchmark dataset to allow for proper uncertainty quantification.
+                    </p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/pdf/2407.20127" target="_blank">Paper</a>
+                        <a href="https://gitlab.cern.ch/atlas/ATLAS-top-tagging-open-data" target="_blank">Code</a>
+                        <a href="https://opendata.cern.ch/record/15013" target="_blank">Data</a>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Etc Page -->
+            <section id="etc" class="tab-content">
+                <h2>Etc</h2>
+                
+                <div class="etc-section">
+                    <h3>📚 Recommended 🎵</h3>
+                    <ul>
+                        <li>Moby Dick by Herman Melville - on the natural sciences and unhealthy obsessions</li>
+                        <li>Orlando by Virgina Woolf - everything great fiction should be and then some</li>
+                        <li>Gilead by Marilynne Robinson - the rare book that makes you a better person for reading it</li>
+                        <li>God, Human, Animal, Machine by Meghan O'Gieblyn - required reading for when AI takes your job</li>
+                        <li>Any music linearly interpolated between Bruce Springsteen and JPEGMAFIA, with extra density around Rosalía</li>
+                    </ul>
+                </div>
+
+                <div class="etc-section">
+                    <h3>📕 Overrated 🔥</h3>
+                    <ul>
+                        <li>On the Road by Jack Kerouac - never been a fan of road trips</li>
+                        <li>Madame Bovary by Gustave Flaubert - just read Anna Karenina instead</li>
+                        <li>The Beatles - we as a society need to get over it</li>
+                    </ul>
+                </div>
+
+                <div class="etc-section">
+                    <h3>🏂 Favorite Snowboarding Lines</h3>
+                    <ul>
+                        <li>Col des Mines - Verbier, Switzerland</li>
+                        <li>Mont Valon Red - Meribel, France</li>
+                        <li>Glades below Checrouit - Courmayeur, Italy</li>
+                        <li>Right from top of Eigernordwand - Grindelwald, Switzerland</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Kevin Greif</p>
+    </footer>
+
+    <script>
+        // Tab switching functionality
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and content
+                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding content
+                button.classList.add('active');
+                document.getElementById(button.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
