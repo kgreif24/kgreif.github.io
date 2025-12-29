@@ -507,12 +507,13 @@ body {
     }
     
     .tab-navigation {
-        margin-bottom: var(--space-md);
+        margin-bottom: var(--space-lg);
     }
     
     .content-card {
         padding: var(--space-xl) var(--space-lg);
         border-radius: 8px;
+        margin-top: var(--space-md);
     }
     
     .tab-button {
