@@ -13,4 +13,4 @@ A clean, professional personal website with a sea-blue theme, hosted on GitHub P
 
 ## License
 
-© 2025 Kevin Greif
+© 2026 Kevin Greif
